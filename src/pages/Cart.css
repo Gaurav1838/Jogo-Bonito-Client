@@ -1,0 +1,32 @@
+.cart-card {
+  border: none;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.cart-card:hover {
+  transform: translateY(-4px);
+}
+
+.cart-img {
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-subtotal {
+  font-weight: 500;
+  color: #444;
+}
+
+.cart-total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 30px;
+}
+
+.cart-empty {
+  font-size: 1.2rem;
+  color: #666;
+}
