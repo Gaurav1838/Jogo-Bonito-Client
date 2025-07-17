@@ -1,15 +1,33 @@
 import { Link } from 'react-router-dom';
 import './navbar.css';
+import { useEffect } from 'react';
 
 function Navbar() {
+  useEffect(() => {
+    const toggler = document.querySelector('.navbar-toggler');
+    const menu = document.querySelector('#navbarNav');
+
+    if (toggler && menu) {
+      toggler.addEventListener('click', () => {
+        const bsCollapse = new bootstrap.Collapse(menu, {
+          toggle: false,
+        });
+
+        if (menu.classList.contains('show')) {
+          bsCollapse.hide();
+        } else {
+          bsCollapse.show();
+        }
+      });
+    }
+  }, []);
+
   const handleNavLinkClick = () => {
-    const navbarCollapse = document.getElementById('navbarNav');
-    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-      const bsCollapse = new window.bootstrap.Collapse(navbarCollapse, { toggle: true });
-      bsCollapse.hide(); 
+    const navbarToggler = document.querySelector('.navbar-collapse');
+    if (navbarToggler && navbarToggler.classList.contains('show')) {
+      new bootstrap.Collapse(navbarToggler).hide();
     }
   };
-
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top full-width-navbar">
@@ -18,6 +36,7 @@ function Navbar() {
           <img src="/logo.png" alt="JOGO BONITO" height="40" className="me-2" />
           <span className="fw-bold">JOGO BONITO</span>
         </Link>
+
         <button
           className="navbar-toggler"
           type="button"
