@@ -32,7 +32,7 @@ function Shop() {
               style={{ cursor: "pointer" }}
             >
               <img
-                src={`https://jogo-bonito-server.onrender.com/${jersey.image}`}
+                src={`https://jogo-bonito-server.onrender.com/assets/${jersey.image}`}
                 className="card-img-top"
                 alt={jersey.name}
                 style={{ height: "250px", objectFit: "cover" }}
