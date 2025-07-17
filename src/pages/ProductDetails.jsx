@@ -39,7 +39,7 @@ function ProductDetails() {
       <div className="row">
         <div className="col-md-6 text-center">
           <img
-            src={`/assets/${jersey.image}`}
+            src={`/${jersey.image}`}
             alt={jersey.name}
             className="img-fluid product-detail-img"
           />
