@@ -32,7 +32,7 @@ function Shop() {
               style={{ cursor: "pointer" }}
             >
               <img
-              src={`/${jersey.image}`}
+              src={`/assets/${jersey.image}`}
                 className="card-img-top"
                 alt={jersey.name}
                 style={{ height: "250px", objectFit: "cover" }}
