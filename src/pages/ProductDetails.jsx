@@ -39,7 +39,7 @@ function ProductDetails() {
       <div className="row">
         <div className="col-md-6 text-center">
           <img
-            src={`https://jogo-bonito-server.onrender.com/assets/${jersey.image}`}
+            src={`/assets/${jersey.image}`}
             alt={jersey.name}
             className="img-fluid product-detail-img"
           />
