@@ -5,10 +5,11 @@ function Navbar() {
   const handleNavLinkClick = () => {
     const navbarCollapse = document.getElementById('navbarNav');
     if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-      const toggler = document.querySelector('.navbar-toggler');
-      if (toggler) toggler.click();
+      const bsCollapse = new window.bootstrap.Collapse(navbarCollapse, { toggle: true });
+      bsCollapse.hide(); 
     }
   };
+
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top full-width-navbar">

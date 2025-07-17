@@ -9,10 +9,13 @@
 }
 
 .cart-img {
-  height: 220px;
-  object-fit: cover;
+  max-height: 300px;
+  width: 100%;
+  object-fit: contain;
+  padding: 1rem;
   border-bottom: 1px solid #eee;
 }
+
 
 .cart-subtotal {
   font-weight: 500;
