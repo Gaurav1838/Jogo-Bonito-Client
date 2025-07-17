@@ -73,7 +73,7 @@ const handleCheckout = async () => {
               <div className="col-md-4 mb-4" key={index}>
                 <div className="card h-100 cart-card">
                   <img
-                    src={item.image}
+                    src={`/assets/${item.image}`}
                     className="cart-img"
                     alt={item.name}
                   />
