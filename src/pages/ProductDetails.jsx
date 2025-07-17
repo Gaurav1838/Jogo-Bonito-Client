@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-//import "./ProductDetails.css";
 
 function ProductDetails() {
   const { productId } = useParams();
@@ -22,7 +21,7 @@ function ProductDetails() {
     const item = {
       _id: jersey._id,
       name: jersey.name,
-      image: jersey.image, // should be full URL from backend
+      image: jersey.image,
       size,
       quantity,
       price: jersey.price,
